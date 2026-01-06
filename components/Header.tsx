@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="border-b border-gray-200">
+    <header className="border-b border-gray-200 bg-white px-10">
       <div className="w-full py-4">
         <div className="flex items-center justify-between px-4">
           {/* Logo on the left */}
