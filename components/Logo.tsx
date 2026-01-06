@@ -6,8 +6,8 @@ export default function Logo() {
       <Image
         src="/logo/logo.png"
         alt="MCF Landscaping Logo"
-        width={96}
-        height={96}
+        width={200}
+        height={200}
         className="h-full w-full object-contain"
       />
     </div>
