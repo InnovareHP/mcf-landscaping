@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="border-b border-gray-200">
       <div className="w-full py-4">
-        <div className="flex items-center justify-between px-4">
+        <div className="mx-[8%] flex items-center justify-between">
           {/* Logo on the left */}
           <Logo />
 
