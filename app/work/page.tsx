@@ -17,11 +17,13 @@ export default function Work() {
         {/* Work Image 1 - Full Width (No margins) */}
         <div className="mt-16 w-full">
           <Image
-            src="/logo/work/work-image-1.png"
+            src="/work/work-image-1.png"
             alt="MCF Landscaping Work"
             width={1920}
             height={1080}
-            className="w-full object-cover"
+            sizes="100vw" // Helps Next.js calculate responsiveness
+            priority // Use this for the first image on the page
+            className="w-full h-auto object-cover" // Added h-auto
           />
         </div>
 
@@ -33,11 +35,13 @@ export default function Work() {
         {/* Work Image 2 - With 5% Margins */}
         <div className="mx-[5%] mt-16">
           <Image
-            src="/logo/work/work-image-2.png"
+            src="/work/work-image-2.png"
             alt="MCF Landscaping Work"
             width={1920}
             height={1080}
-            className="w-full object-cover"
+            sizes="100vw" // Helps Next.js calculate responsiveness
+            priority // Use this for the first image on the page
+            className="w-full h-auto object-cover" // Added h-auto
           />
         </div>
 
