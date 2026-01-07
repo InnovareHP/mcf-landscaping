@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
 import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,15 +17,15 @@ export default function Footer() {
               href="mailto:roy.gingrich@gmail.com"
               className="flex items-center gap-2 transition-colors hover:text-[#2d5016]"
             >
-              <Mail className="h-4 w-4" aria-hidden="true" />
               <span>roy.gingrich@gmail.com</span>
+              <Mail className="h-4 w-4" aria-hidden="true" />
             </a>
             <a
               href="tel:+16168624331"
               className="flex items-center gap-2 transition-colors hover:text-[#2d5016]"
             >
-              <Phone className="h-4 w-4" aria-hidden="true" />
               <span>(616) 862-4331</span>
+              <Phone className="h-4 w-4" aria-hidden="true" />
             </a>
           </div>
 
@@ -45,14 +45,14 @@ export default function Footer() {
           {/* Social links */}
           <div className="flex items-center gap-3">
             <Link
-              href="#"
+              href="https://www.facebook.com/MCFLandscaping"
               aria-label="Visit our Facebook page"
               className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
             >
               <Facebook className="h-5 w-5" aria-hidden="true" />
             </Link>
             <Link
-              href="#"
+              href="https://www.instagram.com/millcreekfarmlandscapingllc/?hl=en"
               aria-label="Visit our Instagram"
               className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
             >

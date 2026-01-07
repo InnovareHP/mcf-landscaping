@@ -1,10 +1,15 @@
-import ServicesSection from '@/components/ServicesPage/ServicesPage'
+import Footer from "@/components/Footer";
+import ServicesSection from "@/components/ServicesPage/ServicesPage";
 
-
-const page = () => {
+const ServicesPage = () => {
   return (
-    <ServicesSection />
-  )
-}
+    <div className="min-h-screen bg-white">
+      <main className="w-full py-16">
+        <ServicesSection />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default page
+export default ServicesPage;

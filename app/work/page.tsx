@@ -1,15 +1,12 @@
-import Header from "@/components/Header";
+import CommercialSection from "@/components/CommercialSection";
+import Footer from "@/components/Footer";
 import MissionSection from "@/components/MissionSection";
 import ResidentialSection from "@/components/ResidentialSection";
-import CommercialSection from "@/components/CommercialSection";
 import Image from "next/image";
-import Footer from "@/components/Footer";
 
 export default function Work() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       {/* Main Content */}
       <main className="w-full">
         {/* Changed from mx-[8%] to mx-[5%] */}
