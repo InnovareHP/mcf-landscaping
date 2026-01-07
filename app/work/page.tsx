@@ -5,53 +5,50 @@ import ResidentialSection from "@/components/ResidentialSection";
 import Image from "next/image";
 
 export default function Work() {
-  // Shared responsive padding class to keep things DRY
-  const containerPadding = "px-4 md:px-[5%] max-w-7xl mx-auto";
-
   return (
     <div className="min-h-screen bg-white">
+      {/* Main Content */}
       <main className="w-full">
-        {/* Mission Section */}
-        <section className={containerPadding}>
+        {/* Changed from mx-[8%] to mx-[5%] */}
+        <div className="mx-[5%]">
           <MissionSection />
-        </section>
+        </div>
 
-        {/* Work Image 1 - Full Bleed (Edge to Edge) */}
-        <div className="mt-12 md:mt-20 w-full overflow-hidden">
+        {/* Work Image 1 - Full Width (No margins) */}
+        <div className="mt-16 w-full">
           <Image
             src="/work/work-image-1.png"
             alt="MCF Landscaping Work"
             width={1920}
             height={1080}
-            sizes="100vw"
-            priority
-            className="w-full h-[40vh] md:h-auto object-cover"
+            sizes="100vw" // Helps Next.js calculate responsiveness
+            priority // Use this for the first image on the page
+            className="w-full h-auto object-cover" // Added h-auto
           />
         </div>
 
         {/* Residential Section */}
-        <section className={`${containerPadding} mt-12 md:mt-20`}>
+        <div className="mx-[5%]">
           <ResidentialSection />
-        </section>
+        </div>
 
-        {/* Work Image 2 - Contained with Margins */}
-        <div className={`${containerPadding} mt-12 md:mt-20`}>
-          <div className="relative overflow-hidden rounded-lg shadow-sm">
-            <Image
-              src="/work/work-image-2.png"
-              alt="MCF Landscaping Work"
-              width={1920}
-              height={1080}
-              sizes="(max-width: 768px) 100vw, 90vw"
-              className="w-full h-auto object-cover"
-            />
-          </div>
+        {/* Work Image 2 - With 5% Margins */}
+        <div className="mx-[5%] mt-16">
+          <Image
+            src="/work/work-image-2.png"
+            alt="MCF Landscaping Work"
+            width={1920}
+            height={1080}
+            sizes="100vw" // Helps Next.js calculate responsiveness
+            priority // Use this for the first image on the page
+            className="w-full h-auto object-cover" // Added h-auto
+          />
         </div>
 
         {/* Commercial Section */}
-        <section className={`${containerPadding} mt-12 md:mt-20 mb-20`}>
+        <div className="mx-[5%]">
           <CommercialSection />
-        </section>
+        </div>
       </main>
 
       <Footer />
