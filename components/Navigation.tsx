@@ -1,18 +1,20 @@
+import Link from "next/link";
+
 export default function Navigation() {
   return (
     <nav className="hidden items-center gap-8 md:flex">
-      <a
-        href="#"
+      <Link
+        href="/about"
         className="text-sm font-medium text-gray-700 hover:text-[#2d5016]"
       >
         About
-      </a>
-      <a
-        href="#"
+      </Link>
+      <Link
+        href="/work"
         className="text-sm font-medium text-gray-700 hover:text-[#2d5016]"
       >
         Work
-      </a>
+      </Link>
       <a
         href="#"
         className="text-sm font-medium text-gray-700 hover:text-[#2d5016]"
@@ -28,4 +30,3 @@ export default function Navigation() {
     </nav>
   );
 }
-

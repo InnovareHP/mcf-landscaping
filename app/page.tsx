@@ -1,6 +1,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import ImageGallery from "@/components/ImageGallery";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -8,11 +9,13 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="w-full py-16">
-        <div className="px-4">
+        <div className="mx-[8%]">
           <HeroSection />
           <ImageGallery />
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
