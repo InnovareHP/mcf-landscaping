@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 
@@ -12,9 +13,12 @@ export default function Header() {
           {/* Navigation items on the right */}
           <div className="flex items-center gap-8">
             <Navigation />
-            <button className="rounded bg-black px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800">
+            <Link
+              href="/contact"
+              className="rounded bg-black px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
