@@ -6,13 +6,14 @@ export default function Logo() {
     <Link
       href="/work"
       aria-label="Go to Work page"
-      className="flex h-24 w-24 items-center justify-center md:h-28 md:w-28"
+      /* Increased from h-24/h-28 to h-32/h-40 */
+      className="flex h-32 w-32 items-center justify-center md:h-40 md:w-40 transition-transform hover:scale-105"
     >
       <Image
         src="/logo/logo.png"
         alt="MCF Landscaping Logo"
-        width={200}
-        height={200}
+        width={300} // Increased base width
+        height={300}
         className="h-full w-full object-contain"
         priority
       />
