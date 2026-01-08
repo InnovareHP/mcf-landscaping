@@ -7,7 +7,7 @@ export default function Header() {
     <header className="border-b border-gray-200 bg-white px-6 md:px-10">
       {/* Increased py-4 to py-6 to give the larger logo breathing room */}
       <div className="w-full py-6">
-        <div className="mx-[5%] md:mx-[8%] flex items-center justify-between">
+        <div className="my-[1%] md:my-[2%] flex items-center justify-between">
           {/* Logo on the left (now larger via the Logo component) */}
           <Logo />
 

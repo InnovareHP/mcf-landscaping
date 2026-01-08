@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutSection() {
@@ -12,41 +11,6 @@ export default function AboutSection() {
         >
           Who We Are
         </h2>
-
-        <div className="grid grid-cols-2 gap-4 lg:gap-6">
-          <div className="relative aspect-square overflow-hidden">
-            <Image
-              src="/about/Adam.jpg"
-              alt="MCF Landscaping team enjoying time together"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 32vw, 100vw"
-              priority
-            />
-          </div>
-
-          <div className="relative aspect-square overflow-hidden">
-            <Image
-              src="/about/Bj.jpg"
-              alt="MCF Landscaping team on site"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1024px) 32vw, 100vw"
-            />
-          </div>
-
-          <div className="relative col-span-2 lg:col-span-1 lg:row-span-2">
-            <div className="relative aspect-square overflow-hidden">
-              <Image
-                src="/about/Roy.jpg"
-                alt="MCF Landscaping crew member at work"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 32vw, 100vw"
-              />
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Right Column - Body Text */}
