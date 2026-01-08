@@ -1,6 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navigation() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/about") {
+      e.preventDefault();
+      router.refresh();
+    }
+  };
+
   return (
     <nav
       className="hidden items-center gap-8 md:flex font-sans"
@@ -8,6 +21,7 @@ export default function Navigation() {
     >
       <Link
         href="/about"
+        onClick={handleAboutClick}
         className="text-sm font-medium text-gray-700 hover:text-[#2d5016] transition-colors"
       >
         About

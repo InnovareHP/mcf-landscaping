@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="absolute inset-0 bg-[url('/footer/footer-bg.png')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-white/75" />
 
-      <div className="relative flex w-full items-center justify-center px-6 py-14">
+      <div className="relative flex w-full items-center justify-center px-6 py-8">
         <div className="flex w-full max-w-6xl flex-col items-center gap-4 lg:flex-row lg:items-center lg:justify-between">
           {/* Contact info */}
           <div className="flex flex-col items-center gap-2 text-sm text-gray-700 lg:items-start">
@@ -57,6 +57,15 @@ export default function Footer() {
               className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
             >
               <Instagram className="h-5 w-5" aria-hidden="true" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/mcf-landscaping/?viewAsMember=true"
+              aria-label="Visit our LinkedIn page"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin className="h-5 w-5" aria-hidden="true" />
             </Link>
           </div>
         </div>
