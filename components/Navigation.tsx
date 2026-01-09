@@ -16,7 +16,7 @@ export default function Navigation() {
 
   return (
     <nav
-      className="hidden items-center gap-8 md:flex font-sans"
+      className="hidden items-center gap-8 lg:flex font-sans"
       style={{ fontFamily: "Arial, sans-serif" }}
     >
       <Link

@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative mt-16 w-full overflow-hidden">
+    <footer className="relative mt-12 sm:mt-14 md:mt-16 w-full overflow-hidden">
       {/* Background image and overlay */}
       <div className="absolute inset-0 bg-[url('/footer/footer-bg.png')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-white/75" />
 
-      <div className="relative flex w-full items-center justify-center px-6 py-8">
-        <div className="flex w-full max-w-6xl flex-col items-center gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative flex w-full items-center justify-center px-6 py-6 sm:py-7 md:py-8">
+        <div className="flex w-full max-w-6xl flex-col items-center gap-4 sm:gap-5 lg:flex-row lg:items-center lg:justify-between">
           {/* Contact info */}
           <div className="flex flex-col items-center gap-2 text-sm text-gray-700 lg:items-start">
             <a
@@ -31,13 +31,15 @@ export default function Footer() {
 
           {/* Logo and brand text */}
           <div className="flex flex-col items-center gap-3 text-center">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center">
               <Image
                 src="/footer/logo-no-bg.png"
                 alt="MCF Landscaping Logo"
-                width={310}
-                height={310}
-                className="h-120 w-120 object-contain"
+                width={800}
+                height={800}
+                unoptimized
+                className="h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80 2xl:h-96 2xl:w-96 object-contain"
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           </div>
@@ -47,21 +49,21 @@ export default function Footer() {
             <Link
               href="https://www.facebook.com/MCFLandscaping"
               aria-label="Visit our Facebook page"
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
+              className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
             >
               <Facebook className="h-5 w-5" aria-hidden="true" />
             </Link>
             <Link
               href="https://www.instagram.com/millcreekfarmlandscapingllc/?hl=en"
               aria-label="Visit our Instagram"
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
+              className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
             >
               <Instagram className="h-5 w-5" aria-hidden="true" />
             </Link>
             <Link
               href="https://www.linkedin.com/company/mcf-landscaping/?viewAsMember=true"
               aria-label="Visit our LinkedIn page"
-              className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
+              className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-gray-800 text-white transition hover:bg-[#1f5f2b]"
               target="_blank"
               rel="noopener noreferrer"
             >
