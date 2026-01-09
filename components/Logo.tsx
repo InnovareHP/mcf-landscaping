@@ -13,7 +13,7 @@ export default function Logo() {
         alt="MCF Landscaping Logo"
         width={400}
         height={200}
-        className="object-contain"
+        className="h-12 w-auto sm:h-14 md:h-16 lg:h-20 object-contain"
         priority
         unoptimized
       />
